@@ -1,5 +1,6 @@
 {
   "name": "ts-website-scrapper",
+  "description": "Small library for parsing websiter written in TypeScript",
   "version": "0.0.1",
   "main": "index.ts",
   "types": "dist/index.d.ts",
