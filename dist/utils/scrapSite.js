@@ -13,7 +13,7 @@ const cheerio_1 = __importDefault(require("cheerio"));
  * @param {string} [url]               parsing site URL.
  * @param {string} [selector]          initial element selector.
  *
- * @returns {Promise<ScrapResult>}     Cheerio object. [Read docs]{@link https://github.com/cheeriojs/cheerio}
+ * @returns {Promise<Cheerio>}     Cheerio object. [Read docs]{@link https://github.com/cheeriojs/cheerio}
  */
 const scrapSite = (url, selector) => {
     return axios_1.default.get(url).then(response => {

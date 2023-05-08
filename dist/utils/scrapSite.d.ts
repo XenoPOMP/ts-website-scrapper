@@ -1,4 +1,5 @@
-import { ScrapResult } from '../types/ScrapResult';
+/// <reference types="cheerio" />
+import Cheerio = cheerio.Cheerio;
 /**
  * Parses sites from given url.
  *
@@ -7,7 +8,7 @@ import { ScrapResult } from '../types/ScrapResult';
  * @param {string} [url]               parsing site URL.
  * @param {string} [selector]          initial element selector.
  *
- * @returns {Promise<ScrapResult>}     Cheerio object. [Read docs]{@link https://github.com/cheeriojs/cheerio}
+ * @returns {Promise<Cheerio>}     Cheerio object. [Read docs]{@link https://github.com/cheeriojs/cheerio}
  */
-declare const scrapSite: (url?: string, selector?: string) => Promise<ScrapResult>;
+declare const scrapSite: (url?: string, selector?: string) => Promise<Cheerio>;
 export default scrapSite;
