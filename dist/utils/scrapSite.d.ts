@@ -1,14 +1,13 @@
-/// <reference types="cheerio" />
-import Cheerio = cheerio.Cheerio;
+import { ScrapResult } from '../types/ScrapResult';
 /**
  * Parses sites from given url.
  *
  * Picks element according to selector.
  *
  * @param {string} [url]               parsing site URL.
- * @param {string} [selector]          initial element selector.
+ * @param {string} [initialSelector]   initial element selector.
  *
- * @returns {Promise<Cheerio>}     Cheerio object. [Read docs]{@link https://github.com/cheeriojs/cheerio}
+ * @returns {Promise<ScrapResult>}     Promise of {@link ScrapResult}.
  */
-declare const scrapSite: (url?: string, selector?: string) => Promise<Cheerio>;
+declare const scrapSite: (url?: string, initialSelector?: string) => Promise<ScrapResult>;
 export default scrapSite;

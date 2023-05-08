@@ -11,15 +11,18 @@ const cheerio_1 = __importDefault(require("cheerio"));
  * Picks element according to selector.
  *
  * @param {string} [url]               parsing site URL.
- * @param {string} [selector]          initial element selector.
+ * @param {string} [initialSelector]   initial element selector.
  *
- * @returns {Promise<Cheerio>}     Cheerio object. [Read docs]{@link https://github.com/cheeriojs/cheerio}
+ * @returns {Promise<ScrapResult>}     Promise of {@link ScrapResult}.
  */
-const scrapSite = (url, selector) => {
+const scrapSite = (url, initialSelector) => {
     return axios_1.default.get(url).then(response => {
         const html = response.data;
         const $ = cheerio_1.default.load(html);
-        return $(selector);
+        return {
+            root: $(initialSelector),
+            loader: $,
+        };
     });
 };
 exports.default = scrapSite;

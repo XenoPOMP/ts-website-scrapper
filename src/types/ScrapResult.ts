@@ -1,10 +1,10 @@
-/// <reference types="cheerio" />
 import Cheerio = cheerio.Cheerio;
 import Root = cheerio.Root;
+
 /**
  * Defines result of scrapSite function.
  */
 export interface ScrapResult {
-    root: Cheerio;
-    loader: Root;
+	root: Cheerio;
+	loader: Root;
 }
