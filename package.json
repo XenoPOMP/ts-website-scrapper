@@ -1,11 +1,26 @@
 {
   "name": "ts-website-scrapper",
   "description": "Small library for parsing website written in TypeScript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "commonjs",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/XenoPOMP/ts-website-scrapper.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/XenoPOMP/ts-website-scrapper#readme",
+  "bugs": {
+    "url": "https://github.com/XenoPOMP/ts-website-scrapper/issues",
+    "email": "makeapexgreatagain@gmail.com"
+  },
+  "author": {
+    "name": "Alex Naumov",
+    "email": "makeapexgreatagain@gmail.com",
+    "url": "https://github.com/XenoPOMP"
+  },
+  "keywords": [ "scrapper", "parse", "website" ],
   "scripts": {
     "compile": "tsc",
     "dev": "nodemon",
