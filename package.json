@@ -1,7 +1,7 @@
 {
   "name": "ts-website-scrapper",
   "description": "Small library for parsing website written in TypeScript",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "commonjs",
@@ -9,7 +9,7 @@
   "scripts": {
     "compile": "tsc",
     "dev": "nodemon",
-    "publish": "yarn compile && npm publish"
+    "publish:npm": "npm run compile && npm publish"
   },
   "dependencies": {
     "axios": "^1.4.0",
